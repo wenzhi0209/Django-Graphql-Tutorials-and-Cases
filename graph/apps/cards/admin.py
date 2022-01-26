@@ -4,6 +4,6 @@ from .models import Card
 # Register your models here.
 
 class CardAdmin(admin.ModelAdmin):
-    list_display=('deck','question','bucket',)
+    list_display=('id','deck','question','bucket',)
 
 admin.site.register(Card,CardAdmin)
